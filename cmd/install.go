@@ -39,7 +39,7 @@ type k3sExecOptions struct {
 // https://update.k3s.io/v1-release/channels
 const PinnedK3sChannel = "stable"
 
-const getScript = "curl -sfL https://rancher-mirror.rancher.cn/k3s/k3s-install.sh"
+const getScript = "curl -sfL https://rancher-mirror.rancher.cn/k3s/k3s-install.sh | INSTALL_K3S_MIRROR=cn"
 
 // MakeInstall creates the install command
 func MakeInstall() *cobra.Command {
